@@ -1,0 +1,8 @@
+### set state
+POST http://172.30.63.204:3500/v1.0/state/statestore HTTP/1.1
+Content-Type: application/json
+
+[{ "key": "name", "value": "Bruce Wayne"}]
+
+### get state
+GET http://localhost:3500/v1.0/state/statestore/name HTTP/1.1
